@@ -11,7 +11,7 @@ const app = express();
 //create Middleware
 app.use(express.json());
 app.use(cors({
-    origin: ["http://localhost:3000/", "https://task-manager-app.onrender.com"]
+    origin: ["http://localhost:3000/", "https://task-manager-app-api-40b7.onrender.com"]
 }));
 app.use("/api/tasks", taskRoute);
 
