@@ -15,15 +15,7 @@ app.use(cors({
 }));
 app.use("/api/tasks", taskRoute);
 
-app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "https://task-manager-app-my06.onrender.com");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  next();
-});
-
-
 // create Routes
-
 app.get("/" , (req , res) => {
     res.send("Home Page");
 });
